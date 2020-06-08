@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+/*	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+*/	font-family: 'Roboto', sans-serif;
+}
+
+.page-header {
+	width: 100%;
+	margin: 0;
+	padding: 30px;
+
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: space-around;
+}
+
+.navbar-list{
+	float: left;
+}
+.navbar-link {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	border-radius: 4px;
+	line-height: 25px;
+	font-size: 1.15em;
+	color: #595959;
+	text-decoration: none;
+}
+
+
+.page-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, minmax(200px, 400px));
+}
+
+.contact-image {
+	margin: 0;
+	padding: 0;
+
+	overflow-y: hidden;
+}
+.contact-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-text {
+	font-family: 'Acme', sans-serif;
+}
+
+.hr {
+	width: 100px;
+	color:  #ff9900;
+}
+
+.contact-form{
+	height: 110vh;
+
+}
+.form-section {
+	width: 60%;
+	margin: 0 auto;
+	padding: 100px;
+
+	border: 1px solid #ff9900;
+}
+
+.contact-inputs {
+	width: 80%;
+	height: 30px;
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid #b3b3b3;
+	/*box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);*/
+
+	outline: none;
+}
+
+form textarea {
+	width: 80%;
+	height: 150px;
+	outline: none;
+	padding: 5px;
+	margin: 5px;
+	outline: none;
+	border: 2px solid #b3b3b3;
+}
+
+form button {
+	box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  margin-left: 45vw;
+
+  background-color: #19334d;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+
+
+  outline: none;
+}
+
+
+.book_now {
+	height: 25vh;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	padding: 100px;
+}
+
+.caption {
+	text-align: center;
+}
+
+button {
+	
+	box-sizing: border-box;
+	width: 150px;
+  height: 50px;
+  margin-left: 39vw;
+
+  background-color: #ff9900;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+
+
+  outline: none;
+}
+
+.footer-container{
+	padding: 20px;
+	height: 30px;
+
+	display: flex;
+	justify-content: space-around;
+}
