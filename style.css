@@ -29,8 +29,15 @@ body {
 	border-radius: 4px;
 	line-height: 25px;
 	font-size: 1.15em;
-	color: #595959;
+	color: #333333;
 	text-decoration: none;
+}
+
+.navbar-link:hover {
+	text-decoration: underline;
+	color:  #ff9900;
+
+	transition: all 350ms ease;
 }
 
 
@@ -110,6 +117,11 @@ form button {
   outline: none;
 }
 
+form button:hover{
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
 
 .book_now {
 	height: 25vh;
@@ -119,6 +131,7 @@ form button {
 
 .caption {
 	text-align: center;
+	font-family: 'Playfair Display', serif;
 }
 
 button {
@@ -138,6 +151,11 @@ button {
 
   outline: none;
 }
+button:hover{
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
 
 .footer-container{
 	padding: 20px;
