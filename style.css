@@ -9,7 +9,11 @@ body {
 */	font-family: 'Roboto', sans-serif;
 }
 
+.page-wrapper{
+	width: 100%;
+}
 
+	/* Header starts */
 
 .page-header {
 	width: 100%;
@@ -43,6 +47,8 @@ body {
 }
 
 
+		/* Page body begins */
+
 .page-info {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -68,6 +74,8 @@ body {
 	width: 100px;
 	color:  #ff9900;
 }
+
+		/* <!-- Contact Form --> */
 
 .contact-form{
 	height: 110vh;
@@ -125,8 +133,10 @@ form button:hover{
 }
 
 
+		/* <!-- bottom section --> */
+
 .book_now {
-	height: 25vh;
+	height: 28vh;
 	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 	padding: 100px;
 }
@@ -158,6 +168,7 @@ button:hover{
 	transition: 1s;
 }
 
+		/* <!-- page footer --> */
 
 .footer-container{
 	padding: 20px;
@@ -165,4 +176,226 @@ button:hover{
 
 	display: flex;
 	justify-content: space-around;
+}
+
+
+
+
+
+		/* Media querries */
+
+		/* for mobile */
+@media only screen and (max-width: 425px) {
+
+	/* Header starts */
+
+.page-header {
+	width: 100%;
+	margin: 0;
+	padding: 15px;
+
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: space-around;
+}
+
+.navbar-list{
+	float: left;
+}
+.navbar-link {
+	display: block;
+	text-align: center;
+	padding: 6px 8px;
+	border-radius: 4px;
+	font-size: 15px;
+	color: #333333;
+	text-decoration: none;
+}
+
+		/* Page body begins */
+
+.page-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, minmax(200px, 300px));
+}
+
+.contact-image {
+	margin: 0;
+	padding: 0;
+
+	overflow-y: hidden;
+}
+.contact-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-text {
+	padding-left: 5px;
+	font-family: 'Acme', sans-serif;
+}
+
+.hr {
+	width: 100px;
+	color:  #ff9900;
+}
+
+	/* <!-- Contact Form --> */
+
+.contact-form{
+	height: 110vh;
+	width: 100%;
+
+}
+.form-section {
+	width: 50%;
+	margin: 0 auto;
+	padding: 50px;
+
+	border: 1px solid #ff9900;
+}
+
+.contact-inputs {
+	width: 80%;
+	height: 10px;
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid #b3b3b3;
+
+	outline: none;
+}
+
+form textarea {
+	width: 80%;
+	height: 100px;
+	outline: none;
+	padding: 5px;
+	margin: 5px;
+	outline: none;
+	border: 2px solid #b3b3b3;
+}
+
+form button {
+	box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  margin-left: 20vw;
+
+  background-color: #19334d;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+
+
+  outline: none;
+}
+
+form button:hover{
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+		/* <!-- bottom section --> */
+
+.book_now {
+	height: 40vh;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	padding: 50px;
+}
+
+.caption {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+button {
+	
+	box-sizing: border-box;
+	width: 100px;
+  height: 40px;
+  margin-left: 25vw;
+
+  background-color: #ff9900;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+
+
+  outline: none;
+}
+button:hover{
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+		/* <!-- page footer --> */
+
+.footer-container{
+	padding: 10px;
+	height: 20px;
+	font-size: 10px;
+
+	display: flex;
+	justify-content: space-around;
+}
+}
+
+	
+		/* for tablets */
+	
+@media only screen and (max-width: 768px) {
+.contact-form{
+	height: 90vh;
+	width: 100%;
+}
+
+form button {
+	box-sizing: border-box;
+  width: 100px;
+  height: 50px;
+  margin-left: 30vw;
+
+  background-color: #19334d;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+
+
+  outline: none;
+}
+
+button {
+	
+	box-sizing: border-box;
+	width: 100px;
+  height: 50px;
+  margin-left: 38vw;
+
+  background-color: #ff9900;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+
+
+  outline: none;
+}
+
+.footer-container{
+	padding: 10px;
+	height: 20px;
+	font-size: 15px;
+
+	display: flex;
+	justify-content: space-around;
+}
+
 }
